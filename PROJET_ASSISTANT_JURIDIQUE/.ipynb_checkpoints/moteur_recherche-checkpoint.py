@@ -185,7 +185,7 @@ class MoteurRechercheCRAG:
             return documents_uniques[:k]
             
         except Exception as e:
-            logger.error(f"❌ Erreur recherche étendue: {e}")
+            logger.error(f" Erreur recherche étendue: {e}")
             return []
     
     def rechercher(self, question: str, k: int = 15) -> List:

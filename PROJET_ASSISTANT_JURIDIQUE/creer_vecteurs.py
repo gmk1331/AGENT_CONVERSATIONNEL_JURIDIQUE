@@ -23,7 +23,7 @@ def charger_pdf_individuel(chemin_fichier):
             # Nettoyage du contenu
             doc.page_content = doc.page_content.strip()
         
-        logger.info(f"✅ Chargé: {os.path.basename(chemin_fichier)} - {len(docs)} pages")
+        logger.info(f" Chargé: {os.path.basename(chemin_fichier)} - {len(docs)} pages")
         return docs
     except Exception as e:
         logger.error(f" Erreur lors du chargement de {chemin_fichier}: {e}")
@@ -169,7 +169,7 @@ def main():
         
         logger.info(f" {len(docs)} documents chargés")
         
-        # 3. Découpage en chunks
+       
         logger.info(" Découpage des textes...")
         morceaux = decouper_textes(docs)
         

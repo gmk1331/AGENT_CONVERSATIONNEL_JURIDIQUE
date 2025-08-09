@@ -169,7 +169,7 @@ def main():
         
         logger.info(f" {len(docs)} documents chargés")
         
-        # 3. Découpage en chunks
+       
         logger.info(" Découpage des textes...")
         morceaux = decouper_textes(docs)
         
